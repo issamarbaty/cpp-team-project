@@ -1,19 +1,15 @@
 #include <iostream>
 #include "Hero.h"
 #include "Ennemi.h"
+#include "Combat.h"
 
 using namespace std;
 
 int main() {
+    Hero hero;
+    Ennemi ennemi;
 
-    Hero h;
-    Ennemi e;
-
-    cout << "HP Ennemi avant attaque : " << e.getHp() << endl;
-
-    h.attaquer(e);
-
-    cout << "HP Ennemi apres attaque : " << e.getHp() << endl;
+    lancerCombat(hero, ennemi);
 
     return 0;
 }
