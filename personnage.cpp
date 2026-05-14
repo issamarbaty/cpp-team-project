@@ -5,6 +5,7 @@ using namespace std;
 
 Personnage::Personnage(int h, int a, int d, int v) {
     hp = h;
+    hpMax = h;
     attaque = a;
     defense = d;
     vitesse = v;
@@ -25,9 +26,8 @@ void Personnage::attaquer(Personnage& cible) {
 void Personnage::recevoirDegats(int degats) {
     hp -= degats;
 
-    if (hp < 0) {
-        hp = 0;
-    }
+    if (hp < 0) hp = 0;
+    if (hp > hpMax) hp = hpMax;
 }
 
 bool Personnage::estVivant() {

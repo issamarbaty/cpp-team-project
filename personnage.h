@@ -7,6 +7,7 @@ class Ennemi;
 class Personnage {
 protected:
     int hp;
+    int hpMax;
     int attaque;
     int defense;
     int vitesse;
