@@ -1,6 +1,9 @@
 #ifndef PERSONNAGE_H
 #define PERSONNAGE_H
 
+class Hero;
+class Ennemi;
+
 class Personnage {
 protected:
     int hp;
@@ -21,6 +24,9 @@ public:
     int getAttaque();
     int getDefense();
     int getVitesse();
+
+    // Fonction amie : acces direct aux attributs proteges pour le combat
+    friend void lancerCombat(Hero& hero, Ennemi& ennemi);
 };
 
 #endif
