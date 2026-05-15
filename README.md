@@ -21,12 +21,13 @@ opposant un héros contrôlé par le joueur à des ennemis générés aléatoire
 - **Expérience & évolution** : système de montée en niveau
 - **Inventaire** : gestion d'objets consommables
 
-### 🔮 Challenge avancé
+### Challenge avancé
 Système de magie basé sur les résistances des ennemis via **polymorphisme dynamique**,
 sans recours à des structures conditionnelles (`if` / `switch`) sur le type des objets.
 
 ## Structure du projet
 
+```
 cpp-team-project/
 ├── main.cpp               # Point d'entrée du programme
 ├── personnage/
@@ -48,7 +49,7 @@ cpp-team-project/
 │   ├── inventory.cpp      # Gestion des objets consommables
 │   └── inventory.h
 └── README.md
-
+```
 
 ## Compilation
 
