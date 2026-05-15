@@ -1,17 +1,10 @@
 #include "Skill.h"
 #include <iostream>
 
-// FireSkill : les degats sont reduits par la resistance au feu de l'ennemi
-// On tente un dynamic_cast pour savoir si la cible est un Ennemi
-// C'est le seul endroit ou on verifie le type, pour appliquer la resistance
+// FireSkill : les degats sont reduits par la resistance au feu via polymorphisme
 void FireSkill::utiliser(Personnage& cible) {
     int degats = 40;
-
-    Ennemi* ennemi = dynamic_cast<Ennemi*>(&cible);
-    if (ennemi != nullptr) {
-        degats -= ennemi->getResistanceFeu();
-    }
-
+    degats = cible.appliquerResistance(degats, "feu");
     std::cout << "FireSkill : inflige " << degats << " degats de feu !" << std::endl;
     cible.recevoirDegats(degats);
 }
