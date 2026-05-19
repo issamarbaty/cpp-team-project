@@ -46,8 +46,8 @@ cpp-team-project/
 │   ├── Combat.cpp         # Système de combat au tour par tour
 │   └── Combat.h
 ├── inventory/
-│   ├── inventory.cpp      # Gestion des objets consommables
-│   └── inventory.h
+│   ├── inventory.h      # Gestion des objets consommables
+│   └── item.h
 └── README.md
 ```
 
