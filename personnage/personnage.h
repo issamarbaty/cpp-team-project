@@ -1,6 +1,8 @@
 #ifndef PERSONNAGE_H
 #define PERSONNAGE_H
 
+#include <string>
+
 class Hero;
 class Ennemi;
 
@@ -16,6 +18,7 @@ public:
     Personnage(int h, int a, int d, int v);
 
     virtual void attaquer(Personnage& cible);
+    virtual int appliquerResistance(int degats, std::string type) { return degats; }
 
     void recevoirDegats(int degats);
 

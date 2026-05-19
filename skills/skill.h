@@ -2,7 +2,6 @@
 #define SKILL_H
 
 #include "Personnage.h"
-#include "Ennemi.h"
 
 // Classe de base abstraite
 class Skill {
