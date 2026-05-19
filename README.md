@@ -54,7 +54,7 @@ cpp-team-project/
 ## Compilation
 
 ```bash
-g++ -o jeu main.cpp hero.cpp ennemi.cpp Combat.cpp Skill.cpp -std=c++17
+g++ -o jeu main.cpp personnage/personnage.cpp hero/hero.cpp ennemi/ennemi.cpp combat/Combat.cpp skills/skill.cpp -std=c++17
 ```
 
 ## Lancement
