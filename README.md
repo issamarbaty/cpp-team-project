@@ -30,11 +30,12 @@ sans recours à des structures conditionnelles (`if` / `switch`) sur le type des
 ```
 cpp-team-project/
 ├── main.cpp               # Point d'entrée du programme
+├── CMakeLists.txt         # Configuration de compilation CMake
 ├── personnage/
 │   ├── personnage.cpp     # Classe de base des personnages
 │   └── personnage.h
 ├── hero/
-│   ├── hero.cpp           # Classe héros — stats, évolution
+│   ├── hero.cpp           # Classe héros — stats, évolution, XP
 │   └── hero.h
 ├── skills/
 │   ├── Skill.cpp          # Compétences & polymorphisme dynamique
@@ -46,8 +47,8 @@ cpp-team-project/
 │   ├── Combat.cpp         # Système de combat au tour par tour
 │   └── Combat.h
 ├── inventory/
-│   ├── inventory.h      # Gestion des objets consommables
-│   └── item.h
+│   ├── Item.h             # Classe de base des objets
+│   └── Inventory.h        # Gestion de l'inventaire
 └── README.md
 ```
 
