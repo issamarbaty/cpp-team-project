@@ -52,10 +52,13 @@ cpp-team-project/
 └── README.md
 ```
 
-## Compilation
+## Compilation avec CMake
 
 ```bash
-g++ -o jeu main.cpp personnage/personnage.cpp hero/hero.cpp ennemi/ennemi.cpp combat/Combat.cpp skills/skill.cpp -std=c++17
+mkdir build
+cd build
+cmake ..
+cmake --build .
 ```
 
 ## Lancement
@@ -66,6 +69,12 @@ g++ -o jeu main.cpp personnage/personnage.cpp hero/hero.cpp ennemi/ennemi.cpp co
 
 # Windows (MinGW)
 jeu.exe
+```
+
+## Compilation (sans CMake)
+
+```bash
+g++ -o jeu main.cpp personnage/personnage.cpp hero/hero.cpp ennemi/ennemi.cpp combat/Combat.cpp skills/skill.cpp -std=c++17
 ```
 
 ## Concepts C++ utilisés
