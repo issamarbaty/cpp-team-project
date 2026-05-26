@@ -46,15 +46,15 @@ cpp-team-project/
 │   ├── Combat.cpp         # Système de combat au tour par tour
 │   └── Combat.h
 ├── inventory/
-│   ├── inventory.cpp      # Gestion des objets consommables
-│   └── inventory.h
+│   ├── inventory.h      # Gestion des objets consommables
+│   └── item.h
 └── README.md
 ```
 
 ## Compilation
 
 ```bash
-g++ -o jeu main.cpp hero.cpp ennemi.cpp Combat.cpp Skill.cpp -std=c++17
+g++ -o jeu main.cpp personnage/personnage.cpp hero/hero.cpp ennemi/ennemi.cpp combat/Combat.cpp skills/skill.cpp -std=c++17
 ```
 
 ## Lancement
