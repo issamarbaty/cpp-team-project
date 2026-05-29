@@ -3,6 +3,7 @@
 
 #include "../personnage/Personnage.h"
 #include <string>
+#include <iostream>
 
 class Item {
 protected:
